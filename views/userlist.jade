@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul 
+  each user, i in userlist
+   li
+   span #{user.username}  span #{user.title} span #{user.content}
